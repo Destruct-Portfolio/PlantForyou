@@ -1,0 +1,275 @@
+[
+  {
+    "PlantID": 2,
+    "Genus": "Mahonia",
+    "CommonName": "Mahonia aquifolium 'Moseri' Oregon Grape",
+    "LatinName": "Mahonia aquifolium 'Moseri'",
+    "Variety": "'Moseri'",
+    "FamilyName": "Berberidaceae",
+    "Explanation": "Mahonia is named after Bernard McMahon, an American horticulturist of the late 1700's.",
+    "Description": "From November until March, yellow, faintly scented flowers appear above long, evergreen, pinnate leaves. The best plants smell of lilies of the valley and their berries, unlike those of the holly, can be made into jam. The Oregon Grape Mahonia is heat tolerant and grows best in moist, acid, rich, well drained soil in partial shade on sheltered sites. Though pruning is not usually necessary, all Mahonias sprout from old wood and even old plants can regenerate freely. Can be cut back in March to encourage bushiness. Mahonia aquifolium grows best in climates with a lot of rainfall.",
+    "SpecificCare": "Mahonia like to grow in sun or semi shade and being woodland plants like rich moist, well-drained soil, with lots of compost or leaf mould incorporated. Bearing this in mind it is good to mulch around the roots with a good layer of compost each year in either autumn or spring. Although this Mahonia does not suffer too badly from insect pests, there are several leaf diseases it can suffer from. Look out for symptoms of mildew, leaf spot or rust and spray with an appropriated fungicide at early signs of infection. If left to its own devices it can be an untidy shrub so can be kept under control by pruning after flowering in late April. Shorten tall straggly stems hard back to a lower branch or a healthy looking bud.",
+    "Planting": "Plant any time in reasonable garden soil in a semi shaded position. Soak the roots prior to planting. Excavate a hole twice the size of the rootball and loosen the soil at the base. Add a handful of bonemeal or general fertilizer according to season. Position the plant at the center of the hole with the top of the rootball level with the soil surface. Backfill the hole firming the soil carefully around the roots. Finally, water in the plant thoroughly ensuring a good soil to root contact is made.",
+    "Feeding": "If the soil is mulched each year with leaf mould or compost further regular feeding should not be needed.",
+    "FlowerColour1": 46,
+    "FlowerSID": 4,
+    "FlowerColour2": 1,
+    "FoliageColour1": 19,
+    "LeafSID": 7,
+    "FoliageColour2": 35,
+    "HeightID": 4,
+    "GrownHeight": "1.5m",
+    "SpreadID": 6,
+    "GrownSpread": "1.5m",
+    "HardinessID": 3,
+    "HardinessZoneID": null,
+    "LifeCycleID": 4,
+    "pHID": 2,
+    "MoistureID": 2,
+    "AspectID": 8,
+    "Propagation": "",
+    "PruningID": 15,
+    "Pruning": "Cut out any crossing branches or untidy growth",
+    "FragranceID": 4,
+    "GerminationID": null,
+    "LeafID": 2,
+    "WorkID": 6,
+    "GrowthRateID": 3,
+    "SmallGarden": 0,
+    "CountryID": 1,
+    "AfterCareID": 6,
+    "PestsID": 0,
+    "Treatment": "",
+    "ResistanceID": 3,
+    "NeedsStaking": 0,
+    "RHS": "YES",
+    "VideoID": null,
+    "CommunityFlag": 0,
+    "Completed": "NO",
+    "SavedPlant": "NO",
+    "TestPlant": "NO",
+    "LivePlant": "YES",
+    "Author": null,
+    "ApprovedBy": "neil",
+    "Status": 3,
+    "updated_at": 1604844168000,
+    "created_at": 1303988173000,
+    "deleted_at": 0,
+    "AuthorID": "72dce6c852d1b36153a3dbbce664259384ab90c5ed8ceffc3fac691bc75cfc1f",
+    "pests": [],
+    "interest_period": [],
+    "pruning_period": [],
+    "planting_period": [],
+    "work_involved": { "ID": 6, "Name": "Needs Some Attention" },
+    "attributes": [
+      {
+        "ID": 6,
+        "Name": "\tBorder Plant\t",
+        "pivot": { "PlantID": 2, "NameID": 6 }
+      },
+      {
+        "ID": 16,
+        "Name": "\tEvergreen\t",
+        "pivot": { "PlantID": 2, "NameID": 16 }
+      },
+      {
+        "ID": 19,
+        "Name": "\tHedging / Screening\t",
+        "pivot": { "PlantID": 2, "NameID": 19 }
+      },
+      {
+        "ID": 29,
+        "Name": "\tWildflower Garden Style\t",
+        "pivot": { "PlantID": 2, "NameID": 29 }
+      },
+      { "ID": 30, "Name": "Boundary", "pivot": { "PlantID": 2, "NameID": 30 } }
+    ],
+    "soil_types": [],
+    "after_care": { "ID": 6, "Name": "No Special After Care Required" },
+    "primary_flower_color": {
+      "ID": 46,
+      "Name": "Yellow",
+      "FlowerSID": 4,
+      "LeafSID": 3
+    },
+    "primary_foliage_color": {
+      "ID": 19,
+      "Name": "Green",
+      "FlowerSID": 8,
+      "LeafSID": 7
+    },
+    "fragrance": { "ID": 4, "Name": "\tScented\t" },
+    "growth_rate": { "ID": 3, "Name": "\tModerate vigorous branching\t" },
+    "leaf_type": { "ID": 2, "Name": "\tEvergreen\t" },
+    "moisture_level": { "ID": 2, "Name": "\tMoist well drained soil\t" },
+    "prefered_ph": { "ID": 2, "Name": "\tAcid - neutral\t" },
+    "hardiness": {
+      "ID": 3,
+      "Name": "\tFully Frost Hardy - withstand temperature down to -15C\t"
+    },
+    "hardiness_zone": null,
+    "interest_elements": [
+      {
+        "ID": 3,
+        "Name": "\tAutumn Colour\t",
+        "pivot": { "PlantID": 2, "NameID": 3 }
+      },
+      {
+        "ID": 3,
+        "Name": "\tAutumn Colour\t",
+        "pivot": { "PlantID": 2, "NameID": 3 }
+      },
+      {
+        "ID": 5,
+        "Name": "\tBerries\t",
+        "pivot": { "PlantID": 2, "NameID": 5 }
+      },
+      {
+        "ID": 5,
+        "Name": "\tBerries\t",
+        "pivot": { "PlantID": 2, "NameID": 5 }
+      },
+      {
+        "ID": 14,
+        "Name": "\tColour\t",
+        "pivot": { "PlantID": 2, "NameID": 14 }
+      },
+      {
+        "ID": 14,
+        "Name": "\tColour\t",
+        "pivot": { "PlantID": 2, "NameID": 14 }
+      },
+      {
+        "ID": 15,
+        "Name": "\tFlower\t",
+        "pivot": { "PlantID": 2, "NameID": 15 }
+      },
+      {
+        "ID": 15,
+        "Name": "\tFlower\t",
+        "pivot": { "PlantID": 2, "NameID": 15 }
+      },
+      {
+        "ID": 16,
+        "Name": "\tFlowers &amp; Berries\t",
+        "pivot": { "PlantID": 2, "NameID": 16 }
+      },
+      {
+        "ID": 16,
+        "Name": "\tFlowers &amp; Berries\t",
+        "pivot": { "PlantID": 2, "NameID": 16 }
+      },
+      {
+        "ID": 17,
+        "Name": "\tFlowers &amp; Leaves\t",
+        "pivot": { "PlantID": 2, "NameID": 17 }
+      },
+      {
+        "ID": 17,
+        "Name": "\tFlowers &amp; Leaves\t",
+        "pivot": { "PlantID": 2, "NameID": 17 }
+      },
+      {
+        "ID": 18,
+        "Name": "\tFlowers for Cutting\t",
+        "pivot": { "PlantID": 2, "NameID": 18 }
+      },
+      {
+        "ID": 18,
+        "Name": "\tFlowers for Cutting\t",
+        "pivot": { "PlantID": 2, "NameID": 18 }
+      },
+      {
+        "ID": 19,
+        "Name": "\tFood Plant for Fauna\t",
+        "pivot": { "PlantID": 2, "NameID": 19 }
+      },
+      {
+        "ID": 19,
+        "Name": "\tFood Plant for Fauna\t",
+        "pivot": { "PlantID": 2, "NameID": 19 }
+      },
+      {
+        "ID": 22,
+        "Name": "\tGood for Hiding Bare or Unsightly Spaces\t",
+        "pivot": { "PlantID": 2, "NameID": 22 }
+      },
+      {
+        "ID": 22,
+        "Name": "\tGood for Hiding Bare or Unsightly Spaces\t",
+        "pivot": { "PlantID": 2, "NameID": 22 }
+      },
+      {
+        "ID": 24,
+        "Name": "\tLeaves &amp; Berries\t",
+        "pivot": { "PlantID": 2, "NameID": 24 }
+      },
+      {
+        "ID": 24,
+        "Name": "\tLeaves &amp; Berries\t",
+        "pivot": { "PlantID": 2, "NameID": 24 }
+      },
+      {
+        "ID": 30,
+        "Name": "\tShape - Adds Character to Your Garden\t",
+        "pivot": { "PlantID": 2, "NameID": 30 }
+      },
+      {
+        "ID": 30,
+        "Name": "\tShape - Adds Character to Your Garden\t",
+        "pivot": { "PlantID": 2, "NameID": 30 }
+      },
+      {
+        "ID": 31,
+        "Name": "\tShape &amp; Colour\t",
+        "pivot": { "PlantID": 2, "NameID": 31 }
+      },
+      {
+        "ID": 31,
+        "Name": "\tShape &amp; Colour\t",
+        "pivot": { "PlantID": 2, "NameID": 31 }
+      },
+      {
+        "ID": 34,
+        "Name": "\tTexture (Touch)\t",
+        "pivot": { "PlantID": 2, "NameID": 34 }
+      },
+      {
+        "ID": 34,
+        "Name": "\tTexture (Touch)\t",
+        "pivot": { "PlantID": 2, "NameID": 34 }
+      },
+      {
+        "ID": 35,
+        "Name": "\tWinter Colour\t",
+        "pivot": { "PlantID": 2, "NameID": 35 }
+      },
+      {
+        "ID": 35,
+        "Name": "\tWinter Colour\t",
+        "pivot": { "PlantID": 2, "NameID": 35 }
+      },
+      {
+        "ID": 36,
+        "Name": "Defensive Planting",
+        "pivot": { "PlantID": 2, "NameID": 36 }
+      },
+      {
+        "ID": 36,
+        "Name": "Defensive Planting",
+        "pivot": { "PlantID": 2, "NameID": 36 }
+      }
+    ],
+    "pruning_advice": [
+      {
+        "ID": 289,
+        "PruningID": 15,
+        "Stage": 1,
+        "PhotoName": "teacupsmall.jpg",
+        "Desc": "No specific pruning required.\r\n\r\nYou can remove any untidy growth to keep the shape and size in check, or you can just relax and enjoy your garden."
+      }
+    ],
+    "diseases": [],
+    "propagation": []
+  }
+]

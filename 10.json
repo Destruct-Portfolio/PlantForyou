@@ -1,0 +1,169 @@
+[
+  {
+    "PlantID": 10,
+    "Genus": "Camellia",
+    "CommonName": "Camellia japonica 'Marguerite Gouillon'",
+    "LatinName": "Camellia japonica 'Marguerite Gouillon'",
+    "Variety": "japonica 'Marguerite Gouillon'",
+    "FamilyName": "Theaceae",
+    "Explanation": "Japonica = from Japan",
+    "Description": "Flowers are pale pink paeony form spotted and streaked vivid red Fully hardy - Plant can withstand temperatures down to -15 Degree C. (5 degree F) Acid Loving Fertile moist well-drained soil Suitable for growing in containers Ph 5.6 to 6.0 (acidic)",
+    "SpecificCare": "Requires consistently moist soil, do not let dry out between waterings.",
+
+    "Planting": "",
+    "FeedingID": 0,
+    "Feeding": "",
+    "FlowerColour1": 33,
+    "FlowerSID": 6,
+    "FlowerColour2": 35,
+    "FoliageColour1": 20,
+    "LeafSID": 7,
+    "FoliageColour2": 1,
+    "HeightID": 6,
+    "GrownHeight": "Height: 8-10 ft. (2.4-3 m) Spacing: 4-6 ft. (1.2-1.8 m)",
+    "SpreadID": 7,
+    "GrownSpread": "Spread - in metres - 1.2 - 1.8m",
+    "HardinessID": 3,
+    "HardinessZoneID": null,
+    "LifeCycleID": 4,
+    "pHID": 2,
+    "MoistureID": 2,
+    "AspectID": 6,
+    "Propagation": "From seed. sow indoors before last frost From seed. direct sow after last frost Scarify seed before sowing",
+    "PruningID": 8,
+    "Pruning": "",
+    "FragranceID": 3,
+    "GerminationID": null,
+    "LeafID": 2,
+    "WorkID": 6,
+    "GrowthRateID": 4,
+    "SmallGarden": 0,
+    "CountryID": 25,
+    "AfterCareID": 7,
+    "PestsID": 0,
+    "Treatment": "",
+    "ResistanceID": 1,
+    "NeedsStaking": 0,
+    "RHS": "NO",
+    "VideoID": null,
+    "CommunityFlag": 0,
+    "Completed": "NO",
+    "SavedPlant": "NO",
+    "TestPlant": "NO",
+    "LivePlant": "YES",
+    "Author": null,
+    "ApprovedBy": "Neil",
+    "Status": 3,
+    "updated_at": 1604844168000,
+    "created_at": 1386174683000,
+    "deleted_at": 0,
+    "AuthorID": "72dce6c852d1b36153a3dbbce664259384ab90c5ed8ceffc3fac691bc75cfc1f",
+    "pests": [],
+    "interest_period": [],
+    "pruning_period": [],
+    "planting_period": [],
+    "work_involved": { "ID": 6, "Name": "Needs Some Attention" },
+    "attributes": [
+      {
+        "ID": 12,
+        "Name": "\tContainer / Pot Plant\t",
+        "pivot": { "PlantID": 10, "NameID": 12 }
+      },
+      {
+        "ID": 16,
+        "Name": "\tEvergreen\t",
+        "pivot": { "PlantID": 10, "NameID": 16 }
+      },
+      {
+        "ID": 25,
+        "Name": "\tSpacer\t",
+        "pivot": { "PlantID": 10, "NameID": 25 }
+      },
+      {
+        "ID": 26,
+        "Name": "\tSpecimen Plant\t",
+        "pivot": { "PlantID": 10, "NameID": 26 }
+      },
+      {
+        "ID": 29,
+        "Name": "\tWildflower Garden Style\t",
+        "pivot": { "PlantID": 10, "NameID": 29 }
+      }
+    ],
+    "soil_types": [],
+    "after_care": { "ID": 7, "Name": "Protect from Frost" },
+    "primary_flower_color": {
+      "ID": 33,
+      "Name": "Pink Pale",
+      "FlowerSID": 6,
+      "LeafSID": 5
+    },
+    "primary_foliage_color": {
+      "ID": 20,
+      "Name": "Green Dark",
+      "FlowerSID": 8,
+      "LeafSID": 7
+    },
+    "fragrance": { "ID": 3, "Name": "\tNot Scented\t" },
+    "growth_rate": { "ID": 4, "Name": "\tModerate vigorous bushy\t" },
+    "leaf_type": { "ID": 2, "Name": "\tEvergreen\t" },
+    "moisture_level": { "ID": 2, "Name": "\tMoist well drained soil\t" },
+    "prefered_ph": { "ID": 2, "Name": "\tAcid - neutral\t" },
+    "hardiness": {
+      "ID": 3,
+      "Name": "\tFully Frost Hardy - withstand temperature down to -15C\t"
+    },
+    "hardiness_zone": null,
+    "interest_elements": [
+      {
+        "ID": 15,
+        "Name": "\tFlower\t",
+        "pivot": { "PlantID": 10, "NameID": 15 }
+      }
+    ],
+    "pruning_advice": [
+      {
+        "ID": 252,
+        "PruningID": 8,
+        "Stage": 2,
+        "PhotoName": "group0802.jpg",
+        "Desc": "Trim to maintain shape and deadhead spent flowers to promote extended flowering period. Remove any dead, damaged or rubbing branches in spring after danger of frost has passed."
+      },
+      {
+        "ID": 288,
+        "PruningID": 8,
+        "Stage": 1,
+        "PhotoName": "group0801.jpg",
+        "Desc": "Camellia, Rhododendron and Sarcococca need minimal pruning. Evergreen shrubs, flowering between winter and early summer on previous or current year's growth and that need minimal pruning. Pruning required annually after flowering if on last years or this year's growth."
+      }
+    ],
+    "diseases": [],
+    "propagation": [
+      {
+        "ID": 4,
+        "Name": "\tFrom Seed\t",
+        "pivot": { "PlantID": 10, "NameID": 4 }
+      },
+      {
+        "ID": 6,
+        "Name": "\tHardwood Cuttings\t",
+        "pivot": { "PlantID": 10, "NameID": 6 }
+      },
+      {
+        "ID": 7,
+        "Name": "\tLayering\t",
+        "pivot": { "PlantID": 10, "NameID": 7 }
+      },
+      {
+        "ID": 10,
+        "Name": "\tSemi-ripe &amp; Ripewood Cuttings\t",
+        "pivot": { "PlantID": 10, "NameID": 10 }
+      },
+      {
+        "ID": 12,
+        "Name": "\tSoftwood Cuttings for Clematis\t",
+        "pivot": { "PlantID": 10, "NameID": 12 }
+      }
+    ]
+  }
+]

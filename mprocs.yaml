@@ -4,4 +4,4 @@ procs:
     shell: tsc --watch
   main:
     cwd: .
-    shell: pnpm run start
+    shell: zsh
