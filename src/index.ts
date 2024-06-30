@@ -1,10 +1,15 @@
+import { initializeApp } from "firebase/app";
+import { getDatabase} from "firebase/database";
 import axios from "axios";
 import formatUrl from "./providers/formatUrl.js";
 import fs from "node:fs";
 import DownloadImage from "./providers/downloadimage.js";
 import CloudinaryUpload from "./providers/cloudinary.js";
-import { UploadPlant } from "./providers/firebase.js";
-import { error } from "node:console";
+import { UploadPlant, firebaseConfig } from "./providers/firebase.js";
+
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+const db = getDatabase();
 
 /**
  * @param plants number of plants you would like to scraper
@@ -12,57 +17,58 @@ import { error } from "node:console";
  * this way you can give a range to start and stop the script.
  */
 
-const Plants = 1;
-const startAt = 8;
+const Plants = 5;
+const startAt = 11;
 
-for (var i = startAt; i <= startAt + Plants; i++) {
-  try {
-     await axios
-      .get(`https://api-gateway.prod.rightplants4me.co.uk/api/plants/${i}`)
-      .then(async (response) => {
-        const data = response.data;
+const scrapePlants = async (plants: number, startAt: number) => {
+  for (let i = startAt; i < startAt + plants; i++) {
+    try {
+      const response = await axios.get(
+        `https://api-gateway.prod.rightplants4me.co.uk/api/plants/${i}`
+      );
+      const data = response.data;
 
-        // this needs to be more polished
-        let plantData = data[0];
-    
-        let photos = data[0].photos;
-    
-        // Create the directory synchronously
-        fs.mkdirSync(`./${plantData.PlantID}`, { recursive: true });
-    
-        const uploaded_pics: Array<string> = [];
-        for (let index = 0; index <= photos.length; index++) {
-          const element = photos[index];
-          const url = await formatUrl(element.Name);
-          console.log(`Formated url is ===> ${url}`);
-          await DownloadImage(url, `./${plantData.PlantID}/${index}.jpg`);
-          // download the picture to cloudinary here
-          let uploadUrl = await CloudinaryUpload(
-            `./${plantData.PlantID}/${index}.jpg`
-          );
-          uploaded_pics.push(uploadUrl);
-        }
-    
-        // combining cloudinary and json object
-        plantData.photos = uploaded_pics;
-        //Object.assign(plantData )
-        console.log(uploaded_pics)
-        plantData["photos"] = uploaded_pics;
-        // test save to see
-    
-        await UploadPlant(plantData, `${plantData.PlantID}`);
-        //fs.writeFileSync(`${plantData.PlantID}_${i+1}.json`, JSON.stringify(plantData));
-        // save to firebase here
-        // delete the folder here
-        fs.rmSync(`${plantData.PlantID}`, { recursive: true, force: true });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  
-  } catch (error) {
-    // this needs to identify the error and log it out...
-    console.log(`Plant with ID ${i} does not exist ... `);
-    console.log(error);
+      if (!data || data.length === 0) {
+        console.log(`No data found for plant with ID ${i}`);
+        continue;
+      }
+
+      const plantData = data[0];
+      const photos = plantData.photos || [];
+
+      // Create the directory synchronously
+      fs.mkdirSync(`./${plantData.PlantID}`, { recursive: true });
+
+      const uploadedPics = [];
+      for (let index = 0; index < photos.length; index++) {
+        const element = photos[index];
+        const url = await formatUrl(element.Name);
+        console.log(`Formatted URL is ===> ${url}`);
+        const filePath = `./${plantData.PlantID}/${index}.jpg`;
+        await DownloadImage(url, filePath);
+
+        const uploadUrl = await CloudinaryUpload(filePath);
+        uploadedPics.push(uploadUrl);
+      }
+
+      // Combine cloudinary URLs with JSON object
+      plantData.photos = uploadedPics;
+      console.log(uploadedPics);
+
+      // Save to Firebase
+      await UploadPlant(database, plantData, `${plantData.PlantID}`);
+
+      // Remove the directory synchronously
+      fs.rmSync(`${plantData.PlantID}`, { recursive: true, force: true });
+    } catch (error:any) {
+      console.error(`Error processing plant with ID ${i}: ${error.message}`);
+      console.error(error);
+    }
   }
-}
+};
+
+
+await scrapePlants(Plants, startAt)
+
+process.exit(0)
+

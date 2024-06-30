@@ -22,6 +22,7 @@ export default async function CloudinaryUpload(path: string) {
       unique_filename: true,
     })
     .then((Response:UploadApiResponse) => {
+      console.log(Response.url)
       return Response.url;
     })
     .catch((error:UploadApiErrorResponse) => {
